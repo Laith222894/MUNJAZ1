@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="main">
+    <!-- start header -->
+<nav class="nav">
+    <div class="logo">
+        <h1>MUNJAZ</h1>
+    </div>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Aboutus.html">About</a></li>
+        <li><a href="Porperties.html">Porperties</a></li>
+    </ul>
+</nav>
+<!-- End header -->
+<!-- section form -->
+<section class="form">
+    
+  <div class="container" style="width: 100%;margin-right: 25%; margin-top: 20px;">
+    <h2 style="text-align: center; margin-bottom: 20px; color: #fff; font-size: 30px;">العقارات المتوفرة لدينا</h2>
+    <form onsubmit="completion() ;return false" id="residental">
+        <table id="dataTable" border="1" class="sTable">
+            
+            <th>اختيار</th>
+            <th>اظهار التفاصيل</th>
+            <th>الايجار الشهري</th>
+            <th>تفاصيل</th>
+            <th>المدينة</th>
+
+            <tr> <!--العقار الاول دمشق-->
+                <td><input type="radio" name="choose" id="rad_chooseRadio" value="="></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">7000000</div>SYP
+                </td>
+                <td>محل مساحة 100م </td>
+                <td>دمشق</td>
+            </tr>
+
+            <tr class="hidden"> <!--نفاصيل العقار الاول دمشق-->
+                <td colspan="5">
+
+                    <div class="details">
+                        <img src="./img/دمشق.jpg" alt="test">
+                        <div class="par">
+                            <p>محل تجاري بدمشق ركن الدين شارع اسد الدين
+                             المساحة 16متر+ 10متر سقيفه
+                            اكساء سوبر ديلوكس
+                            الملكية طابواخضر
+                            التسليم فوري</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!--العقار الثاني حلب-->
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">11000000</div>SYP
+                </td>
+                <td>مزرعة الملكة مساحة 2000متر</td>
+                <td>حلب</td>
+            </tr>
+            <tr class="hidden"> <!--تفاصيل العقار الثاني حلب  -->
+                <td colspan="5">
+                    <div class="details">
+                      <img src="./img/مزرعة حلب.jpg" alt="test2">
+                      <div class="par">
+                        <p>
+                        مزرعة الملكة مساحة 2000متر _الموقع على طريق خان العسل
+                        طاقة شمسية 24 ساعة
+                        مسبح حجم كبير نظام تطويف
+                        صالون اطلالة بانوراما على المسبح
+                        مي ساحنة _غرف نوم _نظافة تامة
+                        </p>
+                      </div>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!--العفار الثالث اللاذقية-->
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">18000000</div>SYP
+                </td>
+                <td>فيلا مساحة 500 متر </td>
+                <td>اللاذقية</td>
+            </tr>
+            <tr class="hidden"> <!--تفاصيل العفار الثالث اللاذقية -->
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/فيلا اللاذقية.jpg" alt="">
+                        <div class="par">
+                            <p>
+                                فيلا مساحة500متر تحوي على 4 غرف نوم
+                                ومطبخ وحمام لكل غرفة نوم بالاضافة الى حمام للضيوف
+                                ومسبح ويوجد تراس مساحة 10متر
+                            </p>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">10800000</div>SYP
+                </td>
+                <td>شقة سكنية مساحة 95متر</td>
+                <td>طرطوس</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <!-- وصف عقار طرطوس -->
+                    <div class="details">
+                       <img src="./img/طرطوس.jpg" alt="test3">
+                      <div class="par">
+                        <p>
+                            شقة سكنية 
+                            الموقع ريف طرطوس-الشيخ سعد
+                            الطابق اول فني
+                            شقة اكساؤها جيد جدا عبارة عن غرفتين نوم وصالون
+                            ومطبخ ومنتفعاتهم
+                            الملكية طابو اخضر 2400سهم
+                        </p>
+                      </div>
+                    </div>
+                </td>
+            </tr>
+            <!---------------------------------------------------------------------->
+            <!------------------------------- وصف عقار ريف دمشق------------------ -->
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">300000000</div>SYP
+                </td>
+                <td>شقتين جانب بعض على العضم</td>
+                <td> ريف دمشق</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        
+                            <img src="./img/ريف دمشق.jpg" alt="test">
+                        
+                        
+                       <div class="par">
+                        <p>شقتين جانب بعض على العضم </p><br>
+                          <p>مساحة الشقة 100 متر</p>  
+                              <p>طابق اول فني اتجاه شمال غرب</p>
+                        <p>بناء مخدم بالكامل قريب من دوار العلم</p>
+                             <p>حكم محكمة</p>
+                                   <p>السعر150 ميون للشقة</p>
+                            <p>للتواصل على الرقم 0947890822</p>
+                            <p>العنوان معضمية الشام</p>
+                        </p>
+                       </div>
+                         
+                         
+
+                         
+                    </div>
+                </td>
+            </tr>
+            <!-- ---------------------- وصف عقار حمص-------------------------->
+            <tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">7600000</div>SYP
+                </td>
+                <td> شقة سكنية مساحة 110متر</td>
+                <td>حمص</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/شقة حمص.jpg" alt="">
+                        <div class="par">
+                            <p>
+                                   شقة بجانب جامع الصفا مساحة 110 متر
+                                   الشقة طابق اول فني مكونة من 3 غرف وصالون ومطبخ ومنافع
+                               وبرندا كبيرة على الوجيبة الاتجاه الشرقي 
+                               الاكساء جيد الملكية طابو اخضر 
+                               تصلح الشقة لاي مشروع استثماري مكتب عيادة مركز تجميل </p>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+            <!-- ------------------------------------ وصف عقار حماة------------------------------------->
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">5500000</div>SYP
+                </td>
+                <td> قبو سكني مساحة 100متر</td>
+                <td>حماة</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/شقة حماة.jpg" alt="">
+                        <div class="par">
+                            <p>
+                                   قبو سكني مساحة 100 متر
+                                     الموقع قصور شارع الطرشان                               
+                                 عدد الغرف 3 وصالون ومطبخ ومنافع  
+                                 الاكساء سوبر ديلوكس طابو اخضر 2400 سهم
+                            </p>
+                        </div>
+
+
+                    </div>
+                </td>
+            </tr>
+            <!-- وسف عقار سويداء -->
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">8900000</div>SYP
+                </td>
+                <td>شقة سكنية مساحة150</td>
+                <td>سويداء</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/swieda.jpg" alt="test">
+                        <div class="par">
+                            <p>
+                                شقة سوبر ديلوكس مساحة150 متر طابق ثاني فني 
+                                 سند تمليك عالفراغ الموقع حي الدبيسي غرب مشفى العيون الاعمال المشتركة خالصة والمصعد شغال 
+                                    </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">16000000</div>SYP
+                </td>
+                <td>منزل سكني</td>
+                <td>درعا</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/درعا.jpg" alt="test6">
+                        <p>
+                    منزل سكني في مدينة الشيخ مسكين مساحةالارض دلم 
+                    مساحة البناء 300 متر 4 غرف وصالون ومنافعو ومضافة خارجية الموقع تحت الناحية     
+                        </p>
+                        
+                        
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">1000000</div>SYP
+                </td>
+                <td> شقة مساحة 170 متر</td>
+                <td> ريف دمشق</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/ريف مشق 2.jpg" alt="test0">
+                         <div class="par">
+                            <p>
+                                شقة طابق اول ثاني فني اتجاه غربي جنوبي مساحة 170 متر 3 غرف وصالون ومنافع 
+                                مكسي  كسوة سوبر ديلوكس  درج خام على موقف القهوة جنب البلدة وخط سرفيس ومدارس
+                                                           </p>
+                         </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">9000000</div>SYP
+                </td>
+                <td>شقة مساحة 100متر</td>
+                <td>دمشق</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/شقة دمشق.jpg" alt="test1">
+                          <div class="par">
+                            <p>
+                                شقة 3 غرف وصالةن ومنافع وبرندا 
+                                الموقع استراد المزة بناء المحافظة  بعد اشارة دار البعث  
+                                مساحة 100 متر طابق خامس 
+                                باب مركزي خدمة ناطور كسوة جيدة طابو اخضر 
+                                                          </p>
+                          </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">8900000</div>SYP
+                </td>
+                <td>شقق سكنية</td>
+                <td>اللاذقية</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/الادقية.jpg" alt="test2">
+                        <div class="par">
+                            <p>
+                                شقق  بناء مميز بمشروع الزين 
+                                المساحات 160 متر ,150 متر مع كل شقة خدمات بالقبول ومحل ع الشارع طابو اخضر 
+                                                        </p>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="choose" id="rad_chooseRadio"></td>
+                <td><input type="checkbox" onclick="t_Row(this)"></td>
+                <td>
+                    <div class="price" style="margin:0px; display: inline-block;">13000000</div>SYP
+                </td>
+                <td>شقةمساحة 110متر</td>
+                <td>حمص</td>
+            </tr>
+            <tr class="hidden">
+                <td colspan="5">
+                    <div class="details">
+                        <img src="./img/حمص.jpg" alt="test4">
+
+                        <div class="par">
+                            <p>
+                                شقة طابق ثاني بحيالعدوية مساحة 110 متر التوزيع 3 غرف ومحرك  
+                                الاكساء جيد الاتجاه قبلية الملكية طابو 
+                                                        </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+        <br>
+        <input type="submit" value="متابعة" style="padding: 10px 20px ; border-radius: 10px;margin-top: 10px;background-image: linear-gradient(to top, rgb(94, 244, 224),rgb(242, 99, 99) ); color:#fff;font-size: 20px;">
+    </form>
+    <br>
+
+    <br>
+
+    <form id="dataEntry" class="hidden" onsubmit="checked();return false;">
+        <h1 style="text-align: center; font-size: 30px; margin-bottom: 20px; margin-top: 20px;">اهلا بك سوف يتم حالياً اكمال عمليات الشراء</h1>
+        <div class="dinput">
+            <div>
+                <input type="text" name="" id="fullname" placeholder="Inter your full name">
+            </div>
+            <div>
+                <input type="number" name="" id="national" placeholder="Inter your national number" maxlength="11">
+
+            </div>
+            <div >
+               <input type="date" name="" id="birthdate" style=" padding-right: 70px;">
+            </div>
+            <div>
+                <input type="email" name="" id="email" placeholder="Inter your E_mail">
+            </div>
+            <div>
+                <input type="tel" placeholder="Your number Phone" id="mobile">
+            </div>
+        </div>
+        <div>
+            <input type="submit" value=" ارسال"style="padding: 10px 20px ; border-radius: 10px;margin-top: 10px;background-color: rgb(175, 134, 213); color:#fff;font-size: 20px;">
+        </div>
+
+    </form>
+
+
+    <!-- فورم captcha-->
+    <form action="" id="Captcaha" class="hidden" onsubmit="captcahasubmit();return false;">
+        <h3 >التحقق من انك لست روبوت</h3>
+        <image src="./img/cap.png" alt="Captcaha"></image>
+        <br><br>
+        <input type="text" name="" id="test">
+        <input type="submit" value="تحقق"  style="padding: 10px 20px ; border-radius: 10px;align-items: center;align-self: center ;margin-top: 10px;background-color: rgb(175, 134, 213); color:#fff;font-size: 20px; ">
+    </form>
+
+    <form action="" id="accept" class="hidden" onsubmit="finished(); return false;">
+        <div id="acpd">تأكيد الشراء</div>
+        <input type="submit" value="تأكيد" class="accda">
+    </form>
+
+  </div>
+
+</section>
+
+    <script src="myFunctions.js"></script>
+</body>
+</html>
